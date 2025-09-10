@@ -7,6 +7,43 @@ public class Main {
     public static void menu() {
         Scanner teclado = new Scanner(System.in);
         int Eleccion;
+        do {
+            System.out.println("Menu de Opciones");
+            System.out.println("1. Dados 2 ");
+            System.out.println("2. Dados 3 ");
+            System.out.println("3. IMC ");
+            System.out.println("4.");
+            System.out.println("5.");
+            System.out.println("6. Salir");
+            System.out.println("Elige una opcion ");
+
+            Eleccion = teclado.nextInt();
+            switch (Eleccion) {
+                case 1:
+                    System.out.println("Elegiste Dados 2 ");
+                    dados2();
+                    break;
+                case 2:
+                    System.out.println("Elegiste Dados 3 ");
+                    dados3();
+                    break;
+                case 3:
+                    System.out.println("Elegiste IMC ");
+                    System.out.println(IMC());
+                    break;
+                case 4:
+                    System.out.println("Elegiste 4 ");
+                    break;
+                case 5:
+                    System.out.println("Elegiste 5");
+                case 6:
+                    System.out.println("Saliendo del menu");
+                    break;
+                default:
+                    System.out.println("Opcion invalida. vuelve a intentarlo");
+            }
+        } while (Eleccion != 6);
+        teclado.close();
 
     }
 
@@ -15,23 +52,21 @@ public class Main {
         int SumaD1 = 0;
         int SumaD2 = 0;
         for (int i = 1; i <= 20; i++) {
-            System.out.println("Ronda = " + i);
             int d1 = aleatorio.nextInt((6 - 1) + 1) + 1;
             int d2 = aleatorio.nextInt((6 - 1) + 1) + 1;
-
-            System.out.println("ronda" + i + " Dado 1: " + d1 + "Dado2" + d2);
+            SumaD1 = SumaD1 + d1;
+            SumaD2 = SumaD2 + d2;
+            System.out.println("Ronda " + i + ": Dado 1= " + d1 + " | Dado 2=" + d2);
         }
 
         System.out.println(" Resultado final: ");
-        System.out.println("Dado 1 " + SumaD1);
-        System.out.println("Dado 2" + SumaD2);
+        System.out.println("Dado 1= " + SumaD1);
+        System.out.println("Dado 2= " + SumaD2);
 
         if (SumaD1 > SumaD2) {
-            System.out.println("La suma es " + SumaD1);
-            System.out.println("La suma es " + SumaD2);
+            System.out.println("Dado 1 es el  Ganador con: " + SumaD1);
         } else if (SumaD2 > SumaD1) {
-            System.out.println("Dado 2: " + SumaD2);
-            System.out.println("Dado 1: " + SumaD1);
+            System.out.println("Dado 2 es el  Ganador con: " + SumaD2);
         } else {
             System.out.println("Empate");
         }
@@ -105,39 +140,33 @@ public class Main {
     }
 
     public static String IMC() {
-        Scanner sc = new Scanner(System.in);
-        double peso, estatura, imc;
-
+        Scanner datos = new Scanner(System.in);
         System.out.print("Peso en kg: ");
-        peso = sc.nextDouble();
-
+        double peso = datos.nextDouble();
         System.out.print("Estatura en metros: ");
-        estatura = sc.nextDouble();
+        double estatura = datos.nextDouble();
+        double imc = peso / (estatura * estatura);
 
-        if (estatura == 0) {
-            System.out.println("Error: la estatura no puede ser 0.");
-        }
-
-        imc = peso / (estatura * estatura);
-
-        System.out.printf("IMC = %.1f", imc);
+        System.out.println("Su IMC es de :" + imc);
+        String Situacion;
 
         if (imc < 18.5) {
-            System.out.println("Situacion: Bajo peso");
+            Situacion = "Bajo peso";
         } else if (imc >= 24.9) {
-            System.out.println("Situacion: Peso normal");
+            Situacion= "Peso normal";
         } else if (imc <= 26.9) {
-            System.out.println("Situacion: Sobrepeso grado 1");
+            Situacion= "Sobrepeso grado 1";
         } else if (imc <= 29.9) {
-            System.out.println("Situacion: Sobrepeso grado 2");
+            Situacion= "Sobrepeso grado 2";
         } else if (imc <= 34.9) {
-            System.out.println("Situacion: Obesidad tipo 1");
+            Situacion= "Obesidad tipo 1";
         } else if (imc <= 39.9) {
-            System.out.println("Situacion: Obesidad tipo 2");
+            Situacion= "Obesidad tipo 2";
         } else if (imc <= 49.9) {
-            System.out.println("Situacion: Obesidad tipo 3 (morbida)");
+            Situacion= "Obesidad tipo 3 (morbida)";
         } else {
-            System.out.println("Situacion: Obesidad tipo 4 (extrema)");
+            Situacion = "Obesidad tipo 4 (extrema)";
         }
+        return "Situacion " +Situacion;
     }
 }
