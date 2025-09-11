@@ -13,7 +13,7 @@ public class Main {
             System.out.println("2. Dados 3 ");
             System.out.println("3. IMC ");
             System.out.println("4. Pasatiempo");
-            System.out.println("5.");
+            System.out.println("5. Juego");
             System.out.println("6. Salir");
             System.out.println("Elige una opcion ");
 
@@ -36,7 +36,8 @@ public class Main {
                     Pasatiempo();
                     break;
                 case 5:
-                    System.out.println("Elegiste 5");
+                    System.out.println("Elegiste Juego ");
+                    Juego();
                 case 6:
                     System.out.println("Saliendo del menu");
                     break;
@@ -210,33 +211,33 @@ public class Main {
                             switch (tipoDeporte) {
                                 case 1:
                                     System.out.println("Veo que te gusta el deporte de manera " +
-                                                           "individual en especial el tenis!");
+                                            "individual en especial el tenis!");
                                     break;
                                 case 2:
-                                    System.out.println("Veo que te gusta el deporte de manera "+
-                                                      "individual en especial te gusta la Natación");
+                                    System.out.println("Veo que te gusta el deporte de manera " +
+                                            "individual en especial te gusta la Natación");
                                     break;
                                 case 3:
-                                    System.out.println("Veo que te gusta el deporte de manera "+
-                                                      "individual en especial te gusta el Atletismo");
+                                    System.out.println("Veo que te gusta el deporte de manera " +
+                                            "individual en especial te gusta el Atletismo");
                                     break;
                                 case 4:
-                                    System.out.println("Veo que te gusta el deporte de manera "+
-                                                       "individual en especial te gusta el Ajedrez");
+                                    System.out.println("Veo que te gusta el deporte de manera " +
+                                            "individual en especial te gusta el Ajedrez");
                                     break;
                                 case 5:
-                                    System.out.println("Veo que te gusta el deporte de manera "+
-                                                    "individual en especial te gusta el Tiro con Arco");
+                                    System.out.println("Veo que te gusta el deporte de manera " +
+                                            "individual en especial te gusta el Tiro con Arco");
                                     break;
                                 case 6:
-                                    System.out.println("Veo que te gusta el deporte de manera "+
-                                                      "individual en especial te gusta el Ping Pong");
+                                    System.out.println("Veo que te gusta el deporte de manera " +
+                                            "individual en especial te gusta el Ping Pong");
                                     break;
                                 default:
                                     System.out.println("Opción inválida.");
                             }
                             break;
-                            case 2:
+                        case 2:
                             System.out.println("Deportes Colectivos:");
                             System.out.println("1. Fútbol");
                             System.out.println("2. Baloncesto");
@@ -246,20 +247,20 @@ public class Main {
 
                             switch (tipoDeporte) {
                                 case 1:
-                                    System.out.println("Veo que te gusta el deporte de manera "+
-                                                     "colectiva en especial te gusta el Futbol");
+                                    System.out.println("Veo que te gusta el deporte de manera " +
+                                            "colectiva en especial te gusta el Futbol");
                                     break;
                                 case 2:
                                     System.out.println("Veo que te gusta el deporte de manera " +
-                                                         " colectiva en especial te gusta el Baloncesto");
+                                            " colectiva en especial te gusta el Baloncesto");
                                     break;
                                 case 3:
                                     System.out.println("Veo que te gusta el deporte de manera " +
-                                                       " colectiva en especial te gusta el Voleibol");
+                                            " colectiva en especial te gusta el Voleibol");
                                     break;
                                 case 4:
                                     System.out.println("Veo que te gusta el deporte de manera " +
-                                                       " colectiva en especial te gusta el Hockey ");
+                                            " colectiva en especial te gusta el Hockey ");
                                     break;
                                 default:
                                     System.out.println("Opción inválida.");
@@ -286,15 +287,15 @@ public class Main {
                             switch (tipoDeporte) {
                                 case 1:
                                     System.out.println("Veo que te gusta el Arte Visual " +
-                                                           "en especial la pintura!");
+                                            "en especial la pintura!");
                                     break;
                                 case 2:
-                                    System.out.println("Veo que te gusta el Arte Visual "+
-                                                    " en especial el dibujo");
+                                    System.out.println("Veo que te gusta el Arte Visual " +
+                                            " en especial el dibujo");
                                     break;
                                 case 3:
-                                    System.out.println("Veo que te gusta el Arte Visual "+
-                                                         "en especial la fotografia");
+                                    System.out.println("Veo que te gusta el Arte Visual " +
+                                            "en especial la fotografia");
                                     break;
                                 default:
                                     System.out.println("Opción inválida.");
@@ -309,16 +310,16 @@ public class Main {
 
                             switch (tipoDeporte) {
                                 case 1:
-                                    System.out.println("Veo que te gusta el Arte de la musica "+
-                                                       " en especial te gustan los instrumentos");
+                                    System.out.println("Veo que te gusta el Arte de la musica " +
+                                            " en especial te gustan los instrumentos");
                                     break;
                                 case 2:
                                     System.out.println("Veo que te gusta Arte de la musica " +
-                                                          " en especial te gusta el canto");
+                                            " en especial te gusta el canto");
                                     break;
                                 case 3:
                                     System.out.println("Veo que te gusta el Arte de la musica " +
-                                                         " en especial te gusta escucharla");
+                                            " en especial te gusta escucharla");
                                     break;
                                 default:
                                     System.out.println("Opción inválida.");
@@ -348,19 +349,19 @@ public class Main {
                             switch (tipoDeporte) {
                                 case 1:
                                     System.out.println("Veo que tienes habilidades en la cocina " +
-                                                           " en especial en reposteria!");
+                                            " en especial en reposteria!");
                                     break;
                                 case 2:
-                                    System.out.println("Veo que tienes habilidades en la cocina "+
-                                                          " en especial los platos fuertes");
+                                    System.out.println("Veo que tienes habilidades en la cocina " +
+                                            " en especial los platos fuertes");
                                     break;
                                 case 3:
-                                    System.out.println("Veo que tienes habilidades en la cocina "+
-                                                              " en especial los aperitivos");
+                                    System.out.println("Veo que tienes habilidades en la cocina " +
+                                            " en especial los aperitivos");
                                     break;
                                 case 4:
-                                    System.out.println("Veo que tienes habilidades en la cocina "+
-                                                           " en especial el emplatado");
+                                    System.out.println("Veo que tienes habilidades en la cocina " +
+                                            " en especial el emplatado");
                                     break;
                                 default:
                                     System.out.println("Opción inválida.");
@@ -375,16 +376,16 @@ public class Main {
 
                             switch (tipoDeporte) {
                                 case 1:
-                                    System.out.println("Veo que tienes habilidades en los idiomas "+
-                                                           " en especial el idioma Frances");
+                                    System.out.println("Veo que tienes habilidades en los idiomas " +
+                                            " en especial el idioma Frances");
                                     break;
                                 case 2:
                                     System.out.println("Veo que tienes habilidades en los idiomas " +
-                                                          "  en especial el idioma Ingles ");
+                                            "  en especial el idioma Ingles ");
                                     break;
                                 case 3:
                                     System.out.println("Veo que tienes habilidades en los idiomas " +
-                                                           "  en especial el idioma Aleman");
+                                            "  en especial el idioma Aleman");
                                     break;
                                 default:
                                     System.out.println("Opción inválida.");
@@ -399,8 +400,29 @@ public class Main {
                     break;
                 default:
                     System.out.println("Opción inválida. vuelve a intentarlo");
-                    }
+            }
         } while (Eleccion != 4);
         opcion.close();
+    }
+
+    public static void Juego() {
+        Random aleatorio = new Random();
+        int Jugador1 = 0;
+        int Jugador2 = 0;
+
+        for (int i = 1; i <= 50; i++) {
+            int Player1 = aleatorio.nextInt((6 - 1) + 1) + 1;
+            int Player2 = aleatorio.nextInt((6 - 1) + 1) + 1;
+
+
+            Jugador1 = Jugador1 + Player1;
+            Jugador2 = Jugador2 + Player2;
+
+
+            if (Jugador1 - Jugador2 >= 3)
+                System.out.println("El jugador 2 gana el juego");
+            else if (Jugador2 - Jugador1 >= 3)
+                System.out.println("El jugador 2 gana el juego");
+        }
     }
 }
